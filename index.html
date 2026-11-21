@@ -656,9 +656,9 @@
         <svg class="icon sun" aria-hidden="true"><use href="#i-sun"/></svg>
         <svg class="icon moon" aria-hidden="true"><use href="#i-moon"/></svg>
       </button>
-      <button class="btn" id="pdf" type="button" aria-label="Download resume as PDF">
+      <a class="btn" id="pdf" href="Barkatullah_Mohammed_Resume.pdf" download="Barkatullah_Mohammed_Resume.pdf" aria-label="Download resume as PDF">
         <svg class="icon" aria-hidden="true"><use href="#i-download"/></svg><span class="lbl">Resume</span>
-      </button>
+      </a>
     </div>
   </div>
 </header>
@@ -1200,8 +1200,6 @@
     f.focus();
   });
 
-  /* Resume download: print stylesheet makes a clean paper version. */
-  document.getElementById('pdf').addEventListener('click', function () { window.print(); });
 
   /* Copy email: the icon becomes a check, with a small tooltip. */
   var copy = document.getElementById('copy'), live = document.getElementById('live'), timer;
